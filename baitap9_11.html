@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<body>
+<h3>Bài 1</h3>
+Nhập độ C : <input type="number" id="temperature">
+<button id="convert1">Convert</button>
+<p id="result1"></p>
+
+<h3>Bài 2</h3>
+<label for="soM">Nhập số m</label>
+<input type="number" id="soM" value="">
+<input type="submit" id="convertM">
+<p id="result2"></p>
+
+<h3>Bài 3</h3>
+Nhập cạnh a (đơn vị cm): <input type="number" id="square">
+<p id="result3"></p>
+
+<h3>Bài 4 </h3>
+<div>Nhập chiều dài (m): <input type="number" id="widthHcn"> </div>
+<div>Nhập chiều rộng (m): <input type="number" id="heightHcn"> </div>
+<button id="result4" onclick="acreage4()" type="button">Tính diện tích</button>
+
+<h3>Bài 5</h3>
+Nhập chiều dài cạnh kề a: <input type="number" id="widthCanha" onkeyup="acreageTamgiacvuong(this.id)"> <br>
+Nhập chiều dài cạnh kề b: <input type="number" id="widthCanhb" onkeyup="acreageTamgiacvuong(this.id)">
+<p id="result5"></p>
+
+<h3>Bài 6: Giải phương trình bậc 1</h3>
+<p>Phương trình: ax + b = 0</p>
+Nhập a: <input type="number" id="equation-a">
+Nhập b: <input type="number" id="equation-b">
+<button type="button" id="result6">Giải phương trình</button>
+<p id="nghiem"></p>
+
+<h3>Bài 7</h3>
+<p>Phương trình: ax<sup>2</sup> + bx + c = 0</p>
+<input type="number" id="nhap-a">X<sup>2</sup> +
+<input type="number" id="nhap-b">X + <input type="number" id="nhap-c" onkeyup="timNghiem()"> = 0
+<p id="result7"></p>
+
+<h3>Bài 8</h3>
+Nhập số tuổi: <input type="number" id="age">
+
+<!--Bai 9-->
+<h3>Bai 9</h3>
+<label>So thu nhat:</label>
+<input type="number" id="number1">
+<label>So thu hai:</label>
+<input type="number" id="number2">
+<label>So thu ba:</label>
+<input type="number" id="number3">
+<button id="checkNumber">Check triangel</button>
+<p id="result3number"></p>
+<!--Bai 10-->
+<h3>Bai 10</h3>
+<label>Cong suat dien</label>
+<input type="number" id="kwH">
+<label>kwH</label>
+<button id="tinhCs">Tinh gia dien</button>
+<p id="resultCs"></p>
+<!--Bai 11-->
+<h3>Bai 11:</h3>
+<label for="b11_a">Nhap thu nhap theo thang :</label>
+<input type="number" id="b11_a" placeholder="(trđ) VND">
+<button onclick="clickedb11();" >Tinh Thue</button>
+<!--Bai 12-->
+<h3>Bai 12:</h3>
+<label for="b12_a">Nhap số tiền ban đầu :</label>
+<input type="number" id="b12_a" placeholder="VND">
+<label for="b12_b">Nhap số tháng cho vay :</label>
+<input type="number" id="b12_b" placeholder="VND">
+<label for="b12_c">Nhap lãi xuất hàng tháng :</label>
+<input type="number" id="b12_c" placeholder="VND">
+<button onclick="clickedb12();" >Tinh lai suat</button>
+
+
+
+
+
+<script src="javascript2.js" type="text/javascript"></script>
+</body>
+</html>
